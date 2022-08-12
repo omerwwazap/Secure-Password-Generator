@@ -1,0 +1,129 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Offline Strong Random Password Generator</title>
+    <meta name="description" content="Strong Password Generator to create secure passwords that are impossible to crack on your device without sending them across the Internet.">
+    <meta name="keywords" content="Password Generator, Online Password Generator, Random Password Generator, Secure Password Generator, Create Password, Generate Password, Offline Password Generator">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <div id="Logo"><img src="images/ftpassword.svg" alt="Secure Random Password Generator" border="0"></div>
+            <div id="LogoText">Offline Secure Password Generator</div>
+        </div>
+        <!-- header -->
+        <div id="sec_options">
+            <div class="chboxl">Password Length:</div>
+            <div class="chboxr">
+                <select id="pgLength" title="Select the length of your password." onclick="S7P( false );">
+                    <optgroup label="Weak">				
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                    </optgroup>
+                    <optgroup label="Strong">   	  			   
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>		
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                    </optgroup>
+                    <optgroup label="Unbelievable">
+                        <option value="256">256</option>
+                        <option value="512">512</option>
+                        <option value="1024">1024</option>
+                        <option value="2048">2048</option>
+                    </optgroup>			
+                </select>
+            </div>
+
+
+            <div class="chboxl">Include Symbols:</div>
+            <div class="chboxr"><label><input type="checkbox" name="Symbols" id="Symbols" onclick="S7P( false );">( e.g. @#$% )</label></div>
+
+            <div class="chboxl">Include Numbers:</div>
+            <div class="chboxr"><label><input type="checkbox" name="Numbers" id="Numbers" onclick="S7P( false );">( e.g. 123456 )</label></div>
+
+            <div class="chboxl">Include Lowercase Characters:</div>
+            <div class="chboxr"><label><input type="checkbox" name="Lowercase" id="Lowercase" onclick="S7P( false );">( e.g. abcdefgh )</label></div>
+
+            <div class="chboxl">Include Uppercase Characters:</div>
+            <div class="chboxr"><label><input type="checkbox" name="Uppercase" id="Uppercase" onclick="S7P( false );">( e.g. ABCDEFGH )</label></div>
+
+            <div class="chboxl">Exclude Similar Characters:</div>
+            <div class="chboxr"><label><input type="checkbox" name="Nosimilar" id="Nosimilar" onclick="S7P( false );">( e.g. i, l, 1, L, o, 0, O )</label></div>
+
+            <div class="chboxl">Exclude Ambiguous Characters:</div>
+            <div class="chboxr"><label><input type="checkbox" name="NoAmb" id="NoAmb" onclick="S7P( false );">( { } [ ] ( ) / \ ' " ` ~ , ; : . &lt; &gt; )</label></div>
+
+            <div class="chboxl">Auto-Select:</div>
+            <div class="chboxr"><label><input type="checkbox" name="AutoSelect" id="AutoSelect" onclick="S7P( false );">( select the password automatically )</label></div>
+
+        </div>
+        <!-- sec_options -->
+
+
+        <div id="sec_btn">
+            <div class="button GenerateBtn" onclick="d2O();">Generate Password </div>
+        </div>
+        <!-- sec_btn -->
+
+        <div id="sec_password">
+
+            <div class="chboxl">Your New Password:</div>
+            <div class="chboxr">
+                <input name="final_pass" id="final_pass" type="text" size="75" value="Your new password will appear here." class="txt_password" onclick="s_('final_pass')" ;="">
+            </div>
+
+        </div>
+        <!-- sec_password -->
+        <div class="sec_blank"></div>
+        <div id="sec_btm">
+            <p>We do not store any passwords.</p>
+            <p>This is a free service.</p>
+            <p>This was made because passwordgenerator.net whent offline</p>
+        </div>
+        <!-- sec_btm -->
+        <div style="clear:both"></div>
+    </div>
+    <!-- container -->
+</body>
