@@ -65,14 +65,6 @@ body {
     border-bottom: 1px solid #dfdfdf;
 }
 
-.sec_blank {
-    float: left;
-    height: 1px;
-    width: 800px;
-    margin: 0 40px 0px 40px;
-    padding: 0px 10px 0px 10px;
-}
-
 #sec_options {
     width: 800px;
     float: left;
@@ -140,15 +132,6 @@ p {
     font-size: 14px;
 }
 
-.ProxyBtn {
-    margin: 0 5px 5px 12px;
-    padding: 0 0 0 0;
-    width: 185px;
-    height: 35px;
-    line-height: 35px;
-    font-size: 14px;
-}
-
 .button {
     float: left;
     text-align: center;
@@ -187,28 +170,4 @@ p {
 
 .ProxyBtn:active {
     margin: 1px 4px 4px 13px;
-}
-
-#ADTOP {
-    width: 728px;
-    height: 90px;
-    float: left;
-    padding: 0px 0px 5px 0px;
-    margin: 0px 86px 10px 86px;
-    background: #fff;
-}
-
-.adbtm {
-    width: 728px;
-    height: 90px;
-    float: left;
-    padding: 0px 36px 5px 36px;
-    margin: 10px 0 10px 0;
-    background: #fff;
-}
-
-.post_line {
-    float: left;
-    width: 800px;
-    margin-bottom: 5px;
 }
