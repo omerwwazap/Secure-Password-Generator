@@ -10,7 +10,7 @@ body {
     padding: 50px 30px 10px 30px;
     background: #ffffff;
     line-height: 23px;
-    border: 1px solid #dfdfdf;
+    border: 1px solid #ffca28;
     border-radius: 10px 10px;
     overflow: hidden;
 }
@@ -62,7 +62,7 @@ body {
     text-align: left;
     padding: 10px 10px 3px 10px;
     font-size: 28px;
-    border-bottom: 1px solid #dfdfdf;
+    border-bottom: 1px solid #ffca28;
 }
 
 #sec_options {
@@ -107,7 +107,7 @@ p {
 #sec_btm a:link,
 #sec_btm a:visited {
     text-decoration: none;
-    color: #0E62E4;
+    color: #ffca28;
 }
 
 #sec_btm a:hover {
@@ -136,32 +136,15 @@ p {
     float: left;
     text-align: center;
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -ms-user-select: none;
     font-family: arial, sans-serif;
-    color: #555;
-    text-shadow: 1px 1px 0px white;
-    background: #ffffff;
-    background: -moz-linear-gradient(top, #ffffff 0%, #eee 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eee));
-    background: -webkit-linear-gradient(top, #ffffff 0%, #eee 100%);
-    background: -o-linear-gradient(top, #ffffff 0%, #eee 100%);
-    background: -ms-linear-gradient(top, #ffffff 0%, #eee 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f8f8f8', GradientType=0);
-    background: linear-gradient(top, #ffffff 0%, #eee 100%);
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
+    background: #ffca28;
     border-radius: 3px;
-    -moz-box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.4);
     box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.4);
-    border: 1px #f8f8f8 solid;
+    border: 1px #ffca28 solid;
 }
 
 .button:hover {
-    border: 1px #dadada solid;
+    border: 1px #ffca28 solid;
 }
 
 .GenerateBtn:active {
