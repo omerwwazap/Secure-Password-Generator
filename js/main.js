@@ -3,6 +3,14 @@ function s_(a) {
     document.getElementById(a).select()
 }
 
+function toggle(source) {
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i] != source)
+            checkboxes[i].checked = source.checked;
+    }
+}
+
 function cY_(e) {
     var a = ["apple", "bestbuy", "coffee", "drip", "egg", "fruit", "golf", "hulu", "iphone", "jack", "korean", "laptop", "music", "nut", "omelet", "park", "queen", "rope", "skype", "tokyo", "usa", "visa", "walmart", "xbox", "yelp", "zip"];
     var d = "";
@@ -149,8 +157,6 @@ function x2J() {
         document.cookie = a + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT"
     }
 }
-
-
 
 function BBB(b, c) {
     var a = document.getElementById(b).checked;
