@@ -5,6 +5,8 @@
     <meta name="keywords" content="Password Generator, Online Password Generator, Random Password Generator, Secure Password Generator, Create Password, Generate Password, Offline Password Generator">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/lib/_languageData.js" charset="utf-8"></script>
+    <script src="js/lib/guessLanguage.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -132,4 +134,34 @@
         <div style="clear:both"></div>
     </div>
     <!-- container -->
+
+    <div class="container">
+        <h2>Language Detection, Try it out!!!</h2>
+        <p>60% of the Time, It Works Every Time 😅</p>
+        <p>
+            <textarea id="input" rows="10" cols="80" placeholder="Text to language detect..."></textarea>
+            <br>
+        </p>
+        <pre id="output" style="visibility: visible;">Waiting for input....</pre>
+
+        <script>
+            var inputTxt = document.querySelector('#input');
+            var outputPre = document.querySelector('#output');
+            inputTxt.addEventListener('keyup', function() {
+                // 1. Get the input text
+                var input = inputTxt.value;
+
+                // 2. Detect language name via guessLanguage.js
+                guessLanguage.info(input, function(languageInfo) {
+                    // 3 .Display output
+                    if (languageInfo[0] == 'unknown') {
+                        outputPre.textContent = 'Not enough text has been provided to determine the source language.';
+                    } else {
+                        outputPre.textContent = 'Detected language of provided text is ' + languageInfo[2] + ' [' + languageInfo[0] + '].';
+                    }
+                });
+                outputPre.style.visibility = "visible";
+            }, false);
+        </script>
+    </div>
 </body>
